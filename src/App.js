@@ -67,17 +67,17 @@ export default function Shuffler() {
 
   return (
     <div class="content">
-      <div>
-        <input type="text" id="word" onChange={handleChange} />
+      <div class="word">
+        <input type="text" id="wordInput" onChange={handleChange} />
       </div>
-      <div>
+      <div class="wordDisplay">
         <h1>{word}</h1>
       </div>
       <div class="lockButtons">
         {lockButtons}
       </div>
       <div class="shuffle">
-        <button id="shuffle" onClick={handleShuffle}>
+        <button id="shuffleButton" onClick={handleShuffle}>
           SHUFFLE
         </button>
       </div>
