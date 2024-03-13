@@ -11,6 +11,8 @@ html, body {
 
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+
+  text-align: center;
 }
 
 h1 {
@@ -47,6 +49,23 @@ h6 {
   font-size: 12px;
 }
 
+button {
+  color: #3A241A;
+  background-color: #FDDB65;
+
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+
+  font-family: 'Inter', sans-serif;
+
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #ffd12b;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -58,7 +77,7 @@ h6 {
   height: 100vh;
 }
 
-.word {
+.topBanner {
   display: flex;
   flex: 1;
   align-items: center;
@@ -72,6 +91,8 @@ h6 {
   border: 2px solid #FDDB65;
   border-radius: 4px;
   text-decoration: none;
+
+  text-align: left;
 
   width: 30vw;
   min-width: 300px;
@@ -95,12 +116,13 @@ h6 {
   text-transform: uppercase;
 }
 
-.lockButtons {
+.tileDisplay {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  flex: 2;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .lockBtn {
   font-size: 35px;
@@ -149,21 +171,21 @@ h6 {
   justify-content: center;
 }
 
-#shuffleButton {
-  color: #3A241A;
-  background-color: #FDDB65;
-
-  border-radius: 5px;
-  border: none;
-  text-decoration: none;
-
-  font-family: 'Inter', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-
-  padding: 10px;
+.circularTile {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#shuffle:hover {
-  background-color: #ffd12b;
+#shuffleButton {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#switchButton {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  transform: translate(-50%, 50%);
 }
